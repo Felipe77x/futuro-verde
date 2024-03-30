@@ -93,6 +93,19 @@ body{
 .home-text p{
   margin-bottom: 4rem;
 }
+
+.paragrafo {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.paragrafo0 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.paragrafo1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .home-btn{
   padding: 15px 45px;
   background: var(--red);
