@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+#newsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#newsList li {
+    margin-bottom: 20px;
+}
+
+#newsList h3 {
+    font-size: 24px;
+}
+
+#newsList p {
+    font-size: 18px;
+    text-align: center;
+}
