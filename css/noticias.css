@@ -1,39 +1,37 @@
 body {
+    font-family: Arial, sans-serif; /* Define a fonte principal como Arial e, se não estiver disponível, uma fonte genérica sans-serif */
+    font-size: 18px; /* Defina o tamanho da fonte para 18 pixels */
+    background-image: url('https://www.uninter.com/noticias/wp-content/uploads/2023/11/noticias_flyers-radio-1.png');
+    background-size: cover;
+    background-position: center;
+    /* Defina uma cor de fundo com transparência por cima da imagem */
+    background-color: rgba(255, 255, 255, 0.2); /* Opacidade: 0.5 */
+}
+
+body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-h1 {
-    text-align: center;
-}
-<<<<<<< HEAD
-header{
-    width: 100%;
-}  
-=======
->>>>>>> 0fcdf3a9bc00fe5956a276bf3fac9d646284bb9b
-
-form {
+.title {
+    color: black;
     text-align: center;
 }
 
-#newsList {
-    list-style-type: none;
-    padding: 0;
+.subtitle {
+    color: #d11717;
+    text-decoration: underline;
 }
 
-#newsList li {
+p {
     margin-bottom: 20px;
 }
 
-#newsList h3 {
-    font-size: 24px;
+/* Estilizando apenas as tags p */
+p {
+    font-family: "Montserrat", sans-serif; /* Exemplo de fonte para os parágrafos */
 }
 
-#newsList p {
-    font-size: 18px;
-    text-align: center;
-}
-<<<<<<< HEAD
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 * {
@@ -145,5 +143,3 @@ header {
         display: block;
     }
 }
-=======
->>>>>>> 0fcdf3a9bc00fe5956a276bf3fac9d646284bb9b
