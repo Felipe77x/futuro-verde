@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-
-<html lang="Pt-br">
-
+<html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/index.css">
 
-    <link rel="stylesheet" href="/css/index.css"  />
-    <title>Vozes Refugiadas</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing page</title>
+</head>
+<body>
     <header>
         <nav class="nav-bar">
             <div class="logo">
@@ -17,14 +18,14 @@
             </div>
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
-                    <li class="nav-item"><a href="doacoes.html" class="nav-link"> Doações</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Ajuda</a></li>
+                    <li class="nav-item"><a href="noticias.html" class="nav-link">Noticia</a></li>
+                    <li class="nav-item"><a href="doacoes.html" class="nav-link"> Doacoes</a></li>
                    
                 </ul>
             </div>
             <div class="login-button">
-                <button><a href="login.html">Cadastro</a></button>
+                <button><a href="login.html">Login</a></button>
             </div>
             <div class="mobile-menu-icon">
                 <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
@@ -42,55 +43,153 @@
         </div>
     </header>
 
-<body>
-    <main>
-        <div class="title">
-            <h1>Sobre vozes Refugiadas</h1>
-        </div>
-        <div class="contentAbout">
-            <img src="/img/images (3).jpg" alt="foto dos refugiados" width="640" height="427"/>
-            <p>
-                <strong>ONG Vozes Refugiadas nasceu da urgente necessidade de apoiar e dar
-            voz às pessoas que são forçadas a fugir de suas casas devido a
-            conflitos armados em todo o mundo. Com foco em regiões afetadas por
-            guerras, como Israel e Hamas na Faixa de Gaza, Burkina Faso,
-            Somália, Sudão, Iêmen, Mianmar, Nigéria e Síria.</strong
-          >
-        </p>
-      </div>
-      <div class="contentText">
-        <p>
-          A inspiração para a criação da ONG Vozes Refugiadas surgiu após um
-          grupo de voluntários testemunhar em primeira mão as terríveis
-          condições enfrentadas pelos refugiados em campos de deslocamento ao
-          redor do mundo. Diante do desespero e da falta de recursos, percebemos
-          a necessidade de agir e criar uma organização que pudesse fornecer
-          assistência prática e apoio emocional a esses indivíduos
-          marginalizados.
-        </p>
-        <p>
-          Desde o nosso início, trabalhamos incansavelmente para conseguir
-          fundos por meio de doações individuais e parcerias com empresas e
-          organizações comprometidas com causas humanitárias. Com esses
-          recursos, pudemos estabelecer programas abrangentes que visam atender
-          às necessidades básicas dos refugiados, como fornecimento de
-          alimentos, água potável, abrigo, cuidados médicos e educação
-        </p>
-      </div>
-    </main>
-    <footer>
-        <ul class="footer-menu">
-            <li class="footer-item"><a href="index.html">Home</a></li>
-            <li class="footer-item"><a href="noticias.html">Notícias</a></li>
-            <li class="footer-item"><a href="doacoes.html">Doações</a></li>
-            <li class="footer-item"><a href="login.html">Cadastro</a></li>
-        </ul>
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Vozes Refugiadas
+                    <span>você</span>
+                </h1>
 
-        <div class="footerCopyright">
-            <p>Copyright &copy; 2021 - Vozes Refugiadas</p>
-            <p>Todos os direitos reservados</p>
+                <p class="description">
+                    Desde o nosso início, trabalhamos incansavelmente para conseguir
+                    fundos por meio de doações individuais e parcerias com empresas e
+                    organizações comprometidas com causas humanitárias. Com esses
+                    recursos, pudemos estabelecer programas abrangentes que visam atender
+                    às necessidades básicas dos refugiados, como fornecimento de
+                    alimentos, água potável, abrigo, cuidados médicos e educação
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Ver cardápio
+                    </a>
+
+                    <a href="tel:+55555555555" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (51) 92342-3243
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="/img/logo tipo projeto social simples .jpg"  alt="">
+            </div>
+        </section>
+
+        
+
+        <section id="testimonials">
+            <img src="/img/vozes refugiadas.png" id="testimonial_chef" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                   Nosso objetivo
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="/img/images (2).jpg" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                               Felipe Dias
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                <strong>ONG Vozes Refugiadas nasceu da urgente necessidade de apoiar e dar
+                                    voz às pessoas que são forçadas a fugir de suas casas devido a
+                                    conflitos armados em todo o mundo. Com foco em regiões afetadas por
+                                    guerras, como Israel e Hamas na Faixa de Gaza, Burkina Faso,
+                                    Somália, Sudão, Iêmen, Mianmar, Nigéria e Síria.</strong
+                                  >
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="/img/download (2).jpg" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                          Isaias
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                            <strong>   A inspiração para a criação da ONG Vozes Refugiadas surgiu após um
+                                grupo de voluntários testemunhar em primeira mão as terríveis
+                                condições enfrentadas pelos refugiados em campos de deslocamento ao
+                                redor do mundo. Diante do desespero e da falta de recursos, percebemos
+                                a necessidade de agir e criar uma organização que pudesse fornecer
+                                assistência prática e apoio emocional a esses indivíduos
+                                marginalizados.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Vozes Refugiadas
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
         </div>
     </footer>
-    <script src="script.js"></script>
-  </body>
+    <script src="src/javascript/script.js"></script>
+</body>
 </html>
