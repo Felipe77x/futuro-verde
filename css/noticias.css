@@ -5,9 +5,12 @@ body {
 h1 {
     text-align: center;
 }
+<<<<<<< HEAD
 header{
     width: 100%;
 }  
+=======
+>>>>>>> 0fcdf3a9bc00fe5956a276bf3fac9d646284bb9b
 
 form {
     text-align: center;
@@ -30,6 +33,7 @@ form {
     font-size: 18px;
     text-align: center;
 }
+<<<<<<< HEAD
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 * {
@@ -141,3 +145,5 @@ header {
         display: block;
     }
 }
+=======
+>>>>>>> 0fcdf3a9bc00fe5956a276bf3fac9d646284bb9b
